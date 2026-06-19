@@ -12,6 +12,7 @@ import { SuppliersModule } from './modules/suppliers/suppliers.module';
 import { VesselsModule } from './modules/vessels/vessels.module';
 import { PurchaseOrdersModule } from './modules/purchase-orders/purchase-orders.module';
 import { InvoicesModule } from './modules/invoices/invoices.module';
+import { PaymentsModule } from './modules/payments/payments.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { InvoicesModule } from './modules/invoices/invoices.module';
     VesselsModule,
     PurchaseOrdersModule,
     InvoicesModule,
+    PaymentsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
