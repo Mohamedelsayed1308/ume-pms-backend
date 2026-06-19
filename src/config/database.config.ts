@@ -6,6 +6,8 @@ import { Supplier } from '../modules/suppliers/entities/supplier.entity';
 import { Vessel } from '../modules/vessels/entities/vessel.entity';
 import { PurchaseOrder } from '../modules/purchase-orders/entities/purchase-order.entity';
 import { PurchaseOrderItem } from '../modules/purchase-orders/entities/purchase-order-item.entity';
+import { Invoice } from '../modules/invoices/entities/invoice.entity';
+import { InvoiceItem } from '../modules/invoices/entities/invoice-item.entity';
 
 export const databaseConfig = (): TypeOrmModuleOptions => ({
   type: 'postgres',
@@ -22,6 +24,8 @@ export const databaseConfig = (): TypeOrmModuleOptions => ({
     Vessel,
     PurchaseOrder,
     PurchaseOrderItem,
+    Invoice,
+    InvoiceItem,
   ],
   synchronize: process.env.NODE_ENV === 'development',
   logging: process.env.NODE_ENV === 'development',
