@@ -1,4 +1,4 @@
-import {
+﻿import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
@@ -39,13 +39,7 @@ export class PurchaseOrderItem {
   })
   unit_price: number;
 
-  @Column({
-    type: 'decimal',
-    precision: 15,
-    scale: 2,
-    generated: 'STORED',
-    asExpression: 'quantity * unit_price',
-  })
+  @Column({ type: 'decimal', precision: 15, scale: 2, default: 0 })
   total_price: number;
 
   @Column({ type: 'text', nullable: true })
@@ -64,3 +58,4 @@ export class PurchaseOrderItem {
   @JoinColumn({ name: 'po_id' })
   purchase_order: PurchaseOrder;
 }
+

@@ -1,4 +1,5 @@
-import { IsUUID, IsString, IsOptional, IsDate, IsEnum, IsArray, ValidateNested, Type, IsDecimal, Min } from 'class-validator';
+﻿import { Type } from 'class-transformer';
+import { IsUUID, IsString, IsOptional, IsDate, IsEnum, IsArray, ValidateNested, IsDecimal, Min } from 'class-validator';
 import { InvoiceCurrency } from '../entities/invoice.entity';
 
 export class CreateInvoiceItemDto {
@@ -55,3 +56,4 @@ export class CreateInvoiceDto {
   @Type(() => CreateInvoiceItemDto)
   items: CreateInvoiceItemDto[];
 }
+

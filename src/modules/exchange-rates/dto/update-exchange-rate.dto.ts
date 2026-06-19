@@ -1,4 +1,5 @@
-import { IsOptional, IsDecimal, Min, IsDate, Type } from 'class-validator';
+﻿import { Type } from 'class-transformer';
+import { IsOptional, IsDecimal, Min, IsDate } from 'class-validator';
 
 export class UpdateExchangeRateDto {
   @IsOptional()
@@ -11,3 +12,4 @@ export class UpdateExchangeRateDto {
   @Type(() => Date)
   effective_date?: Date;
 }
+

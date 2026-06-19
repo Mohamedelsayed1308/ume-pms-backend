@@ -1,4 +1,4 @@
-import {
+﻿import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
@@ -40,8 +40,7 @@ export class InvoiceItem {
     type: 'decimal',
     precision: 15,
     scale: 2,
-    generated: 'STORED',
-    asExpression: 'quantity * unit_price',
+    default: 0,
   })
   total_price: number;
 
@@ -61,3 +60,4 @@ export class InvoiceItem {
   @JoinColumn({ name: 'invoice_id' })
   invoice: Invoice;
 }
+

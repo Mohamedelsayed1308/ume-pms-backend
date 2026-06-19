@@ -1,4 +1,5 @@
-import { IsEnum, IsDecimal, Min, IsDate, IsOptional, IsString, Type } from 'class-validator';
+﻿import { Type } from 'class-transformer';
+import { IsEnum, IsDecimal, Min, IsDate, IsOptional, IsString } from 'class-validator';
 import { ExchangeRateCurrency } from '../entities/exchange-rate.entity';
 
 export class CreateExchangeRateDto {
@@ -20,3 +21,4 @@ export class CreateExchangeRateDto {
   @IsString()
   created_by?: string;
 }
+

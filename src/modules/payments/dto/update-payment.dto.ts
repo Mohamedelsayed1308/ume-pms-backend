@@ -1,4 +1,5 @@
-import { IsOptional, IsString, IsDate, IsEnum, IsDecimal, Min, Type, IsUUID } from 'class-validator';
+﻿import { Type } from 'class-transformer';
+import { IsOptional, IsString, IsDate, IsEnum, IsDecimal, Min, IsUUID } from 'class-validator';
 import { PaymentMethod, PaymentCurrency } from '../entities/payment.entity';
 
 export class UpdatePaymentDto {
@@ -48,3 +49,4 @@ export class CancelPaymentDto {
   @IsString()
   cancellation_reason?: string;
 }
+

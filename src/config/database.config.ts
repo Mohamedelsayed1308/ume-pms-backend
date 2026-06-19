@@ -37,5 +37,5 @@ export const databaseConfig = (): TypeOrmModuleOptions => ({
   logging: process.env.NODE_ENV === 'development',
   dropSchema: false,
   keepConnectionAlive: true,
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
+  ssl: { rejectUnauthorized: false },
 });

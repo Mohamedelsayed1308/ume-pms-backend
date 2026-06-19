@@ -1,4 +1,4 @@
-import {
+﻿import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
@@ -83,13 +83,7 @@ export class Invoice {
   })
   paid_amount: number;
 
-  @Column({
-    type: 'decimal',
-    precision: 15,
-    scale: 2,
-    generated: 'STORED',
-    asExpression: 'total_amount - paid_amount',
-  })
+  @Column({ type: 'decimal', precision: 15, scale: 2, default: 0 })
   remaining_amount: number;
 
   @Column({
@@ -153,3 +147,4 @@ export class Invoice {
   })
   items: InvoiceItem[];
 }
+

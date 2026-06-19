@@ -1,4 +1,5 @@
-import { IsOptional, IsString, IsDate, IsEnum, IsArray, ValidateNested, Type, IsDecimal, Min } from 'class-validator';
+﻿import { Type } from 'class-transformer';
+import { IsOptional, IsString, IsDate, IsEnum, IsArray, ValidateNested, IsDecimal, Min } from 'class-validator';
 import { Currency, POPriority } from '../entities/purchase-order.entity';
 import { CreatePurchaseOrderItemDto } from './create-purchase-order.dto';
 
@@ -45,3 +46,4 @@ export class RejectPurchaseOrderDto {
   @IsString()
   rejection_reason: string;
 }
+

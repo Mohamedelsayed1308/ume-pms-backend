@@ -1,4 +1,5 @@
-import { IsUUID, IsString, IsOptional, IsDate, IsEnum, IsArray, ValidateNested, Type, IsDecimal, Min } from 'class-validator';
+﻿import { Type } from 'class-transformer';
+import { IsUUID, IsString, IsOptional, IsDate, IsEnum, IsArray, ValidateNested, IsDecimal, Min } from 'class-validator';
 import { Currency, POPriority } from '../entities/purchase-order.entity';
 
 export class CreatePurchaseOrderItemDto {
@@ -56,3 +57,4 @@ export class CreatePurchaseOrderDto {
   @Type(() => CreatePurchaseOrderItemDto)
   items: CreatePurchaseOrderItemDto[];
 }
+

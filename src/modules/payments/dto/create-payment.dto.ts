@@ -1,4 +1,5 @@
-import { IsUUID, IsString, IsOptional, IsDate, IsEnum, IsDecimal, Min, Type } from 'class-validator';
+﻿import { Type } from 'class-transformer';
+import { IsUUID, IsString, IsOptional, IsDate, IsEnum, IsDecimal, Min } from 'class-validator';
 import { PaymentMethod, PaymentCurrency } from '../entities/payment.entity';
 
 export class CreatePaymentDto {
@@ -39,3 +40,4 @@ export class CreatePaymentDto {
   @IsString()
   notes?: string;
 }
+

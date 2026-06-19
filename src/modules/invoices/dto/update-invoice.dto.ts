@@ -1,4 +1,5 @@
-import { IsOptional, IsString, IsDate, IsEnum, IsArray, ValidateNested, Type, IsDecimal, Min, IsUUID } from 'class-validator';
+﻿import { Type } from 'class-transformer';
+import { IsOptional, IsString, IsDate, IsEnum, IsArray, ValidateNested, IsDecimal, Min, IsUUID } from 'class-validator';
 import { InvoiceCurrency } from '../entities/invoice.entity';
 import { CreateInvoiceItemDto } from './create-invoice.dto';
 
@@ -50,3 +51,4 @@ export class RejectInvoiceDto {
   @IsString()
   rejection_reason: string;
 }
+
