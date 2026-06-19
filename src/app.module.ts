@@ -10,6 +10,7 @@ import { RolesModule } from './modules/roles/roles.module';
 import { PermissionsModule } from './modules/permissions/permissions.module';
 import { SuppliersModule } from './modules/suppliers/suppliers.module';
 import { VesselsModule } from './modules/vessels/vessels.module';
+import { PurchaseOrdersModule } from './modules/purchase-orders/purchase-orders.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { VesselsModule } from './modules/vessels/vessels.module';
     PermissionsModule,
     SuppliersModule,
     VesselsModule,
+    PurchaseOrdersModule,
   ],
   controllers: [AppController],
   providers: [AppService],

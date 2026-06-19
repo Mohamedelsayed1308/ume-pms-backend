@@ -4,6 +4,8 @@ import { Role } from '../modules/roles/entities/role.entity';
 import { Permission } from '../modules/permissions/entities/permission.entity';
 import { Supplier } from '../modules/suppliers/entities/supplier.entity';
 import { Vessel } from '../modules/vessels/entities/vessel.entity';
+import { PurchaseOrder } from '../modules/purchase-orders/entities/purchase-order.entity';
+import { PurchaseOrderItem } from '../modules/purchase-orders/entities/purchase-order-item.entity';
 
 export const databaseConfig = (): TypeOrmModuleOptions => ({
   type: 'postgres',
@@ -18,6 +20,8 @@ export const databaseConfig = (): TypeOrmModuleOptions => ({
     Permission,
     Supplier,
     Vessel,
+    PurchaseOrder,
+    PurchaseOrderItem,
   ],
   synchronize: process.env.NODE_ENV === 'development',
   logging: process.env.NODE_ENV === 'development',
