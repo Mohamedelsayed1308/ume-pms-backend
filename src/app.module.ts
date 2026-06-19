@@ -13,6 +13,9 @@ import { VesselsModule } from './modules/vessels/vessels.module';
 import { PurchaseOrdersModule } from './modules/purchase-orders/purchase-orders.module';
 import { InvoicesModule } from './modules/invoices/invoices.module';
 import { PaymentsModule } from './modules/payments/payments.module';
+import { BankAccountsModule } from './modules/bank-accounts/bank-accounts.module';
+import { ExchangeRatesModule } from './modules/exchange-rates/exchange-rates.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 @Module({
   imports: [
@@ -30,6 +33,9 @@ import { PaymentsModule } from './modules/payments/payments.module';
     PurchaseOrdersModule,
     InvoicesModule,
     PaymentsModule,
+    BankAccountsModule,
+    ExchangeRatesModule,
+    DashboardModule,
   ],
   controllers: [AppController],
   providers: [AppService],
